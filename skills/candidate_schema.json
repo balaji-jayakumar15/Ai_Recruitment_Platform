@@ -1,0 +1,69 @@
+{
+  "personal_details": {
+    "name": "",
+    "email": "",
+    "phone": "",
+    "location": ""
+  },
+
+  "education": [
+    {
+      "degree": "",
+      "institution": "",
+      "field_of_study": "",
+      "start_year": "",
+      "end_year": ""
+    }
+  ],
+
+  "skills": {
+    "programming_languages": [],
+    "web_development": [],
+    "databases": [],
+    "machine_learning": [],
+    "data_analytics": [],
+    "backend": [],
+    "cloud_and_devops": [],
+    "tools": []
+  },
+
+  "experience": [
+    {
+      "company": "",
+      "job_title": "",
+      "start_date": "",
+      "end_date": "",
+      "responsibilities": []
+    }
+  ],
+
+  "projects": [
+    {
+      "project_name": "",
+      "description": "",
+      "technologies": []
+    }
+  ],
+
+  "certifications": [
+    {
+      "name": "",
+      "organization": "",
+      "year": ""
+    }
+  ],
+
+  "internships": [
+    {
+      "company": "",
+      "role": "",
+      "duration": ""
+    }
+  ],
+
+  "achievements": [],
+
+  "languages": [],
+
+  "total_experience_years": 0
+}

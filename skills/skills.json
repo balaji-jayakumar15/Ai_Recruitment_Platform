@@ -1,0 +1,80 @@
+{
+  "programming_languages": [
+    "Python",
+    "Java",
+    "C",
+    "C++",
+    "C#",
+    "JavaScript",
+    "TypeScript",
+    "R",
+    "Go",
+    "PHP"
+  ],
+
+  "web_development": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Angular",
+    "Vue.js",
+    "Node.js",
+    "Express.js",
+    "Bootstrap",
+    "Tailwind CSS"
+  ],
+
+  "databases": [
+    "MySQL",
+    "PostgreSQL",
+    "MongoDB",
+    "SQLite",
+    "Oracle",
+    "SQL",
+    "Redis"
+  ],
+
+  "machine_learning": [
+    "Machine Learning",
+    "Deep Learning",
+    "Natural Language Processing",
+    "Computer Vision",
+    "Scikit-learn",
+    "TensorFlow",
+    "PyTorch",
+    "Keras"
+  ],
+
+  "data_analytics": [
+    "Excel",
+    "Power BI",
+    "Tableau",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn"
+  ],
+
+  "backend": [
+    "FastAPI",
+    "Flask",
+    "Django",
+    "Spring Boot"
+  ],
+
+  "cloud_and_devops": [
+    "AWS",
+    "Azure",
+    "Google Cloud",
+    "Docker",
+    "Kubernetes"
+  ],
+
+  "tools": [
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Jupyter Notebook"
+  ]
+}
