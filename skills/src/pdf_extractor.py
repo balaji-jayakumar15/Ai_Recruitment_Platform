@@ -16,3 +16,12 @@ def extract_text_from_pdf(file_path):
                 text += page_text + "\n"
 
     return text.strip()
+
+
+# Test with your resume PDF
+pdf_path = "skills/resumes/resume_1.pdf"
+
+extracted_text = extract_text_from_pdf(pdf_path)
+
+print("===== EXTRACTED RESUME TEXT =====")
+print(extracted_text)
