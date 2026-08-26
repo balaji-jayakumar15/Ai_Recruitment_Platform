@@ -1,55 +1,16 @@
-import re
-
-
-def clean_text(text):
+def extract_text_from_txt(file_path):
     """
-    Clean extracted resume text.
+    Read text from a plain-text resume.
     """
-
-    # Remove extra spaces
-    text = re.sub(r"\s+", " ", text)
-
-    # Remove unnecessary spaces around punctuation
-    text = re.sub(r"\s([,.])", r"\1", text)
-
-    return text.strip()
+    with open(file_path, "r", encoding="utf-8") as file:
+        return file.read().strip()
 
 
-def extract_email(text):
-    """
-    Extract email address from resume text.
-    """
+# Resume text file
+file_path = "skills/resumes/resume1.txt"
 
-    pattern = r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
+# Extract text
+extracted_text = extract_text_from_txt(file_path)
 
-    match = re.search(pattern, text)
-
-    return match.group(0) if match else ""
-
-
-def extract_phone(text):
-    """
-    Extract phone number from resume text.
-    """
-
-    pattern = r"(?:\+91[\s-]?)?[6-9]\d{9}"
-
-    match = re.search(pattern, text)
-
-    return match.group(0) if match else ""
-
-
-def process_resume(text):
-    """
-    Process resume text and extract basic candidate details.
-    """
-
-    cleaned_text = clean_text(text)
-
-    candidate = {
-        "email": extract_email(cleaned_text),
-        "phone": extract_phone(cleaned_text),
-        "cleaned_text": cleaned_text
-    }
-
-    return candidate
+print("===== RESUME TEXT =====")
+print(extracted_text)
