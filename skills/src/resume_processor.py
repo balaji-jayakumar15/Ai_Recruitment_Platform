@@ -1,5 +1,6 @@
 import json
 import re
+import os
 
 from skill_normalizer import normalize_skills
 
@@ -30,7 +31,7 @@ def clean_resume_text(text):
 
     text = text.replace("\x00", " ")
 
-    # Replace multiple spaces/newlines
+    # Replace multiple spaces/tabs
     text = re.sub(r"[ \t]+", " ", text)
 
     # Remove excessive blank lines
@@ -58,7 +59,7 @@ def extract_name(text):
     if lines:
         first_line = lines[0]
 
-        # Avoid treating headings as names
+        # Avoid treating very long headings as names
         if len(first_line.split()) <= 5:
             return first_line
 
@@ -132,14 +133,21 @@ def extract_skills(resume_text):
         skill_lower = skill.lower()
 
         # Word boundary matching
-        pattern = r"(?<!\w)" + re.escape(skill_lower) + r"(?!\w)"
+        pattern = (
+            r"(?<!\w)"
+            + re.escape(skill_lower)
+            + r"(?!\w)"
+        )
 
         if re.search(pattern, text_lower):
 
             found_skills.append(skill)
 
-    # Normalize
+    # Normalize skills
     found_skills = normalize_skills(found_skills)
+
+    # Remove duplicates
+    found_skills = list(set(found_skills))
 
     return sorted(found_skills)
 
@@ -202,6 +210,7 @@ def extract_projects(text):
             continue
 
         if "project" in line_clean.lower():
+
             inside_project_section = True
             continue
 
@@ -213,7 +222,8 @@ def extract_projects(text):
                     "education",
                     "skills",
                     "experience",
-                    "certification"
+                    "certification",
+                    "internship"
                 ]
             ):
                 break
@@ -240,6 +250,7 @@ def extract_certifications(text):
         line_clean = line.strip()
 
         if "certification" in line_clean.lower():
+
             inside_section = True
             continue
 
@@ -251,7 +262,8 @@ def extract_certifications(text):
                     "education",
                     "skills",
                     "experience",
-                    "project"
+                    "project",
+                    "internship"
                 ]
             ):
                 break
@@ -297,23 +309,88 @@ def extract_candidate_profile(resume_text):
 
 
 # --------------------------------------------------
-# Test directly
+# Process ALL resume text files
 # --------------------------------------------------
 
 if __name__ == "__main__":
 
-    with open(
-        "skills/resumes/resume1.txt",
-        "r",
-        encoding="utf-8"
-    ) as file:
+    resume_folder = "skills/resumes"
 
-        resume_text = file.read()
+    # Check whether folder exists
+    if not os.path.exists(resume_folder):
 
-    profile = extract_candidate_profile(resume_text)
+        print(f"Resume folder not found: {resume_folder}")
 
-    print(json.dumps(
-        profile,
-        indent=4,
-        ensure_ascii=False
-    ))
+        exit()
+
+    # Get all .txt files
+    resume_files = [
+        file
+        for file in os.listdir(resume_folder)
+        if file.lower().endswith(".txt")
+    ]
+
+    # Sort files
+    resume_files.sort()
+
+    # Check if resumes exist
+    if not resume_files:
+
+        print("No .txt resume files found.")
+
+        exit()
+
+    print("=" * 60)
+    print(f"Found {len(resume_files)} resume(s)")
+    print("=" * 60)
+
+    # Process every resume
+    for resume_file in resume_files:
+
+        file_path = os.path.join(
+            resume_folder,
+            resume_file
+        )
+
+        print("\n")
+        print("=" * 60)
+        print(f"Processing: {resume_file}")
+        print("=" * 60)
+
+        try:
+
+            # Read resume
+            with open(
+                file_path,
+                "r",
+                encoding="utf-8"
+            ) as file:
+
+                resume_text = file.read()
+
+            # Extract candidate profile
+            profile = extract_candidate_profile(
+                resume_text
+            )
+
+            # Display result
+            print(
+                json.dumps(
+                    profile,
+                    indent=4,
+                    ensure_ascii=False
+                )
+            )
+
+            print(f"\n✓ {resume_file} processed successfully")
+
+        except Exception as error:
+
+            print(
+                f"\n✗ Error processing {resume_file}: {error}"
+            )
+
+    print("\n")
+    print("=" * 60)
+    print("ALL RESUMES PROCESSED")
+    print("=" * 60)
