@@ -15,7 +15,7 @@ Hyderabad Institute of Technology
 CGPA: 8.9
 
 Skills:
-Python, Machine Learning, Deep Learning, TensorFlow, Scikit-learn, Pandas, NumPy, SQL
+im a python developer and i have experience in Python, Machine Learning, TensorFlow, Scikit-learn, Pandas, NumPy, SQL
 
 Work Experience:
 Machine Learning Intern
