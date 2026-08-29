@@ -1,0 +1,279 @@
+[
+    {
+        "personal_details": {
+            "name": "ABIRAMI M",
+            "email": "abirami.m@gmail.com",
+            "phone": "+91 9876543210",
+            "location": "Chennai, Tamil Nadu, India"
+        },
+        "education": [
+            "Bachelor of Science (B.Sc Computer Science)"
+        ],
+        "skills": {
+            "programming_languages": [
+                "C",
+                "C++",
+                "Java",
+                "JavaScript",
+                "Python"
+            ],
+            "web_development": [
+                "CSS",
+                "HTML",
+                "JavaScript"
+            ],
+            "databases": [
+                "SQL"
+            ],
+            "machine_learning": [],
+            "data_analytics": [
+                "Excel",
+                "Power BI"
+            ],
+            "backend": [],
+            "cloud_and_devops": [],
+            "tools": []
+        },
+        "experience": [],
+        "projects": [
+            "Student Management System using Python and SQL."
+        ],
+        "certifications": [
+            "Data Analytics Fundamentals"
+        ],
+        "internships": [],
+        "achievements": [],
+        "languages": [],
+        "total_experience_years": 0,
+        "source_file": "resume1.txt"
+    },
+    {
+        "personal_details": {
+            "name": "Name: Meena Joseph",
+            "email": "meena.joseph@example.com",
+            "phone": "+91 98765 10010",
+            "location": "Bangalore, Karnataka"
+        },
+        "education": [
+            "B.Tech Computer Science Engineering"
+        ],
+        "skills": {
+            "programming_languages": [
+                "Java"
+            ],
+            "web_development": [],
+            "databases": [
+                "SQL"
+            ],
+            "machine_learning": [],
+            "data_analytics": [],
+            "backend": [],
+            "cloud_and_devops": [],
+            "tools": [
+                "Git"
+            ]
+        },
+        "experience": [
+            "Android Developer Intern",
+            "MobileApps Technologies, Bangalore",
+            "January 2024 - June 2024",
+            "Developed Android application features.",
+            "Integrated Firebase services.",
+            "Created user interfaces using XML.",
+            "Tested applications on Android devices."
+        ],
+        "projects": [
+            "College Event App",
+            "Developed an Android application for college events.",
+            "Added event registration and notification features.",
+            "Used Firebase for storing application data."
+        ],
+        "certifications": [
+            "Android App Development"
+        ],
+        "internships": [
+            "Android Developer Intern at MobileApps Technologies"
+        ],
+        "achievements": [],
+        "languages": [
+            "English",
+            "Malayalam",
+            "Kannada"
+        ],
+        "total_experience_years": 0,
+        "source_file": "resume2.txt"
+    },
+    {
+        "personal_details": {
+            "name": "Name: Ananya Iyer",
+            "email": "ananya.iyer@example.com",
+            "phone": "+91 98765 10008",
+            "location": "Chennai, Tamil Nadu"
+        },
+        "education": [],
+        "skills": {
+            "programming_languages": [],
+            "web_development": [
+                "CSS",
+                "HTML"
+            ],
+            "databases": [],
+            "machine_learning": [],
+            "data_analytics": [],
+            "backend": [],
+            "cloud_and_devops": [],
+            "tools": []
+        },
+        "experience": [
+            "UI/UX Design Intern",
+            "Creative Digital Studio, Chennai",
+            "February 2025 - July 2025",
+            "Created wireframes and prototypes.",
+            "Conducted basic user research.",
+            "Designed mobile application interfaces.",
+            "Collaborated with developers."
+        ],
+        "projects": [
+            "Food Delivery Mobile App",
+            "Designed the complete mobile application interface.",
+            "Created user flows and interactive prototypes.",
+            "Conducted usability testing."
+        ],
+        "certifications": [],
+        "internships": [
+            "UI/UX Design Intern at Creative Digital Studio"
+        ],
+        "achievements": [],
+        "languages": [
+            "English",
+            "Tamil",
+            "Hindi"
+        ],
+        "total_experience_years": 0,
+        "source_file": "resume3.txt"
+    },
+    {
+        "personal_details": {
+            "name": "Name: Sneha Reddy",
+            "email": "sneha.reddy@example.com",
+            "phone": "+91 98765 10004",
+            "location": "Hyderabad, Telangana"
+        },
+        "education": [
+            "B.Tech Computer Science"
+        ],
+        "skills": {
+            "programming_languages": [
+                "Python"
+            ],
+            "web_development": [],
+            "databases": [
+                "SQL"
+            ],
+            "machine_learning": [
+                "Machine Learning",
+                "Scikit-learn",
+                "TensorFlow"
+            ],
+            "data_analytics": [
+                "NumPy",
+                "Pandas"
+            ],
+            "backend": [],
+            "cloud_and_devops": [],
+            "tools": []
+        },
+        "experience": [
+            "Machine Learning Intern",
+            "AI Solutions Pvt Ltd, Hyderabad",
+            "January 2025 - June 2025",
+            "Prepared datasets for machine learning models.",
+            "Built classification models using Scikit-learn.",
+            "Evaluated model performance.",
+            "Worked with data preprocessing techniques."
+        ],
+        "projects": [
+            "Customer Churn Prediction",
+            "Built a machine learning model to predict customer churn.",
+            "Used Python and Scikit-learn.",
+            "Achieved 87% accuracy during testing."
+        ],
+        "certifications": [
+            "Machine Learning with Python",
+            "Introduction to Artificial Intelligence"
+        ],
+        "internships": [
+            "Machine Learning Intern at AI Solutions Pvt Ltd"
+        ],
+        "achievements": [],
+        "languages": [
+            "English",
+            "Hindi",
+            "Telugu"
+        ],
+        "total_experience_years": 0,
+        "source_file": "resume4.txt"
+    },
+    {
+        "personal_details": {
+            "name": "Name: Mohammed Faiz",
+            "email": "faiz.mohammed@example.com",
+            "phone": "+91 98765 10005",
+            "location": "Mumbai, Maharashtra"
+        },
+        "education": [
+            "Location: Mumbai, Maharashtra",
+            "B.E. Computer Engineering",
+            "Mumbai University"
+        ],
+        "skills": {
+            "programming_languages": [
+                "Python"
+            ],
+            "web_development": [],
+            "databases": [
+                "MySQL",
+                "PostgreSQL"
+            ],
+            "machine_learning": [],
+            "data_analytics": [],
+            "backend": [
+                "Django",
+                "Flask"
+            ],
+            "cloud_and_devops": [],
+            "tools": [
+                "Git"
+            ]
+        },
+        "experience": [
+            "Backend Developer Intern",
+            "TechCore Solutions, Mumbai",
+            "August 2023 - February 2024",
+            "Developed backend APIs using Flask.",
+            "Designed database tables.",
+            "Implemented CRUD operations.",
+            "Tested REST APIs using Postman."
+        ],
+        "projects": [
+            "Online Book Management System",
+            "Developed a backend application using Django.",
+            "Used PostgreSQL for database management.",
+            "Created APIs for books and users."
+        ],
+        "certifications": [
+            "Python Backend Development"
+        ],
+        "internships": [
+            "Backend Developer Intern at TechCore Solutions"
+        ],
+        "achievements": [],
+        "languages": [
+            "English",
+            "Hindi",
+            "Marathi"
+        ],
+        "total_experience_years": 0,
+        "source_file": "resume5.txt"
+    }
+]
