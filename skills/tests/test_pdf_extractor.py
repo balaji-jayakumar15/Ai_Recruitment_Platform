@@ -12,7 +12,7 @@ sys.path.insert(0, SRC_DIR)
 # Move to project folder so skills/skills.json can be found
 os.chdir(PROJECT_DIR)
 
-from resume_processor import extract_candidate_profile
+from src.resume_processor import extract_candidate_profile
 
 
 # --------------------------------------------------
