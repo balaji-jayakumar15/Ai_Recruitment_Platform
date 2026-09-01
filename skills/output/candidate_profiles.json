@@ -6,6 +6,12 @@
             "phone": "+91 9876543210",
             "location": "Chennai, Tamil Nadu, India"
         },
+        "social_profiles": {
+            "github": null,
+            "linkedin": null,
+            "naukri": null,
+            "portfolio": null
+        },
         "education": [
             "Bachelor of Science (B.Sc Computer Science)"
         ],
@@ -54,6 +60,12 @@
             "phone": "+91 98765 10010",
             "location": "Bangalore, Karnataka"
         },
+        "social_profiles": {
+            "github": "https://github.com/abirami",
+            "linkedin": "https://www.linkedin.com/in/abirami",
+            "naukri": "https://www.naukri.com/abirami",
+            "portfolio": null
+        },
         "education": [
             "B.Tech Computer Science Engineering"
         ],
@@ -70,7 +82,8 @@
             "backend": [],
             "cloud_and_devops": [],
             "tools": [
-                "Git"
+                "Git",
+                "GitHub"
             ]
         },
         "experience": [
@@ -110,6 +123,12 @@
             "phone": "+91 98765 10008",
             "location": "Chennai, Tamil Nadu"
         },
+        "social_profiles": {
+            "github": "https://github.com/abirami",
+            "linkedin": "https://www.linkedin.com/in/abirami",
+            "naukri": "https://www.naukri.com/abirami",
+            "portfolio": null
+        },
         "education": [],
         "skills": {
             "programming_languages": [],
@@ -122,7 +141,9 @@
             "data_analytics": [],
             "backend": [],
             "cloud_and_devops": [],
-            "tools": []
+            "tools": [
+                "GitHub"
+            ]
         },
         "experience": [
             "UI/UX Design Intern",
@@ -158,6 +179,12 @@
             "email": "sneha.reddy@example.com",
             "phone": "+91 98765 10004",
             "location": "Hyderabad, Telangana"
+        },
+        "social_profiles": {
+            "github": null,
+            "linkedin": null,
+            "naukri": null,
+            "portfolio": null
         },
         "education": [
             "B.Tech Computer Science"
@@ -220,6 +247,12 @@
             "email": "faiz.mohammed@example.com",
             "phone": "+91 98765 10005",
             "location": "Mumbai, Maharashtra"
+        },
+        "social_profiles": {
+            "github": null,
+            "linkedin": null,
+            "naukri": null,
+            "portfolio": null
         },
         "education": [
             "Location: Mumbai, Maharashtra",

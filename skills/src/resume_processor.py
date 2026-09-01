@@ -260,6 +260,54 @@ def extract_location(text):
 
     return None
 
+# --------------------------------------------------
+# Extract social and portfolio links
+# --------------------------------------------------
+
+def extract_social_profiles(text):
+
+    profiles = {
+        "github": None,
+        "linkedin": None,
+        "naukri": None,
+        "portfolio": None
+    }
+
+    # Find URLs
+    url_pattern = r'https?://[^\s<>"\']+|www\.[^\s<>"\']+'
+
+    urls = re.findall(
+        url_pattern,
+        text,
+        re.IGNORECASE
+    )
+
+    # Remove punctuation at the end of URLs
+    urls = [
+        url.rstrip(".,;:)]}")
+        for url in urls
+    ]
+
+    for url in urls:
+
+        url_lower = url.lower()
+
+        if "github.com" in url_lower:
+            profiles["github"] = url
+
+        elif "linkedin.com" in url_lower:
+            profiles["linkedin"] = url
+
+        elif "naukri.com" in url_lower:
+            profiles["naukri"] = url
+
+        elif (
+            "portfolio" in url_lower
+            or "personal" in url_lower
+        ):
+            profiles["portfolio"] = url
+
+    return profiles
 
 # ============================================================
 # EXTRACT SKILLS
@@ -855,6 +903,11 @@ def extract_candidate_profile(resume_text):
                 clean_text
             )
         },
+
+        "social_profiles": extract_social_profiles(
+            clean_text
+        ),
+        
 
         "education": extract_education(
             clean_text
