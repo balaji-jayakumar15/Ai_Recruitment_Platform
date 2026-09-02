@@ -340,19 +340,9 @@ def extract_skills(resume_text):
         found_skills
     )
 
-    unique_skills = []
-
-    for skill in found_skills:
-
-        if skill.lower() not in [
-            existing.lower()
-            for existing in unique_skills
-        ]:
-
-            unique_skills.append(skill)
 
     return sorted(
-        unique_skills,
+        found_skills,
         key=str.lower
     )
 

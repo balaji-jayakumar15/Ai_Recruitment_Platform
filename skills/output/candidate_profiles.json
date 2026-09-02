@@ -25,8 +25,7 @@
             ],
             "web_development": [
                 "CSS",
-                "HTML",
-                "JavaScript"
+                "HTML"
             ],
             "databases": [
                 "SQL"
@@ -71,15 +70,19 @@
         ],
         "skills": {
             "programming_languages": [
-                "Java"
+                "Java",
+                "Kotlin"
             ],
             "web_development": [],
             "databases": [
+                "Firebase",
                 "SQL"
             ],
             "machine_learning": [],
             "data_analytics": [],
-            "backend": [],
+            "backend": [
+                "REST API"
+            ],
             "cloud_and_devops": [],
             "tools": [
                 "Git",
@@ -142,6 +145,7 @@
             "backend": [],
             "cloud_and_devops": [],
             "tools": [
+                "Figma",
                 "GitHub"
             ]
         },
@@ -198,6 +202,7 @@
                 "SQL"
             ],
             "machine_learning": [
+                "Artificial Intelligence",
                 "Machine Learning",
                 "Scikit-learn",
                 "TensorFlow"
@@ -272,11 +277,15 @@
             "data_analytics": [],
             "backend": [
                 "Django",
-                "Flask"
+                "Flask",
+                "REST API"
             ],
-            "cloud_and_devops": [],
+            "cloud_and_devops": [
+                "Linux"
+            ],
             "tools": [
-                "Git"
+                "Git",
+                "Postman"
             ]
         },
         "experience": [

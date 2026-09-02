@@ -248,6 +248,9 @@ def normalize_skills(skills):
 
     for skill in skills:
 
+        if not isinstance(skill, str) or not skill.strip():
+            continue
+
         standard_skill = normalize_skill(skill)
 
         if not standard_skill:
