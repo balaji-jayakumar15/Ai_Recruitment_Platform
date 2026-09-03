@@ -1,5 +1,7 @@
 from fastapi import FastAPI
+
 from app.routers.job_routes import router as job_router
+from app.routers.resume_routes import router as resume_router
 
 
 app = FastAPI(
@@ -10,6 +12,7 @@ app = FastAPI(
 
 
 app.include_router(job_router)
+app.include_router(resume_router)
 
 
 @app.get("/")
