@@ -1,0 +1,48 @@
+RESUME 3
+
+Name: Ananya Iyer
+Email: ananya.iyer@example.com
+Phone: +91 98765 10008
+Location: Chennai, Tamil Nadu
+
+Career Objective:
+UI/UX designer with an interest in creating simple, accessible, and user-friendly digital experiences.
+
+Education:
+B.Des Interaction Design
+Design Institute Chennai
+2025
+CGPA: 8.6
+
+Skills:
+Figma, Adobe XD, Photoshop, UI Design, UX Research, Wireframing, Prototyping, HTML, CSS
+
+Work Experience:
+UI/UX Design Intern
+Creative Digital Studio, Chennai
+February 2025 - July 2025
+- Created wireframes and prototypes.
+- Conducted basic user research.
+- Designed mobile application interfaces.
+- Collaborated with developers.
+
+Projects:
+Food Delivery Mobile App
+- Designed the complete mobile application interface.
+- Created user flows and interactive prototypes.
+- Conducted usability testing.
+
+Certifications:
+- Google UX Design Certificate
+- Figma UI Design Certification
+
+Internships:
+UI/UX Design Intern at Creative Digital Studio
+
+Languages:
+English, Tamil, Hindi
+
+GitHub: https://github.com/abirami
+LinkedIn: https://www.linkedin.com/in/abirami
+Naukri: https://www.naukri.com/abirami
+Portfolio: https://abirami.dev

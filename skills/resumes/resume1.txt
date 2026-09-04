@@ -1,0 +1,37 @@
+ABIRAMI M
+
+Email: abirami.m@gmail.com
+Phone: +91 9876543210
+Location: Chennai, Tamil Nadu, India
+
+CAREER OBJECTIVE
+
+Dedicated Computer Science student passionate about Web Development and Data Analytics, seeking an opportunity to apply programming, analytical, and problem-solving skills while gaining practical industry experience.
+
+EDUCATION
+
+Bachelor of Science (B.Sc Computer Science)
+
+St. Joseph’s College Arts and Science
+
+University of Madras
+
+Expected Graduation: 2027
+
+SKILLS
+
+Programming Languages: Basics on Python, Java, C, C++, JavaScript, SQL (Basics)
+
+Web Development: HTML, CSS
+
+Data Analytics: Excel, Power BI
+
+PROJECTS
+
+Student Management System using Python and SQL.
+
+CERTIFICATIONS
+
+Python Programming Certificate
+
+Data Analytics Fundamentals

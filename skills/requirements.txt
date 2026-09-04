@@ -1,5 +1,2 @@
 pdfplumber
-pandas
-numpy
-scikit-learn
-spacy
+python-docx

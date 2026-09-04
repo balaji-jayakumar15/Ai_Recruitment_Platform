@@ -1,9 +1,49 @@
-from src.pdf_extractor import extract_text_from_pdf
+import sys
+import os
+
+# Get the project paths
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+SRC_DIR = os.path.abspath(os.path.join(CURRENT_DIR, "..", "src"))
+PROJECT_DIR = os.path.abspath(os.path.join(CURRENT_DIR, "..", ".."))
+
+# Add src folder to Python path
+sys.path.insert(0, SRC_DIR)
+
+# Move to project folder so skills/skills.json can be found
+os.chdir(PROJECT_DIR)
+
+from src.resume_processor import extract_candidate_profile
 
 
-pdf_path = "data/resumes/sample_resume.pdf"
+# --------------------------------------------------
+# Test resume1.txt
+# --------------------------------------------------
 
-text = extract_text_from_pdf(pdf_path)
+resume_path = os.path.join(
+    PROJECT_DIR,
+    "skills",
+    "resumes",
+    "resume1.txt"
+)
 
-print("===== EXTRACTED RESUME TEXT =====")
-print(text)
+
+with open(
+    resume_path,
+    "r",
+    encoding="utf-8"
+) as file:
+
+    resume_text = file.read()
+
+
+# Extract candidate profile
+profile = extract_candidate_profile(resume_text)
+
+
+# Display result
+print("\n===== EXTRACTED CANDIDATE PROFILE =====")
+
+for key, value in profile.items():
+    print(f"{key}: {value}")
+
+print("========================================\n")

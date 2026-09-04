@@ -1,0 +1,48 @@
+RESUME 2
+
+Name: Meena Joseph
+Email: meena.joseph@example.com
+Phone: +91 98765 10010
+Location: Bangalore, Karnataka
+
+GitHub: https://github.com/abirami
+LinkedIn: https://www.linkedin.com/in/abirami
+Naukri: https://www.naukri.com/abirami
+Portfolio: https://abirami.dev
+
+Career Objective:
+Software engineer interested in mobile application development and modern programming technologies.
+
+Education:
+B.Tech Computer Science Engineering
+Bangalore Technical University
+2024
+CGPA: 8.5
+
+Skills:
+Java, Kotlin, Android, Firebase, SQL, Git, REST API, XML
+
+Work Experience:
+Android Developer Intern
+MobileApps Technologies, Bangalore
+January 2024 - June 2024
+- Developed Android application features.
+- Integrated Firebase services.
+- Created user interfaces using XML.
+- Tested applications on Android devices.
+
+Projects:
+College Event App
+- Developed an Android application for college events.
+- Added event registration and notification features.
+- Used Firebase for storing application data.
+
+Certifications:
+- Android App Development
+- Kotlin Programming Certification
+
+Internships:
+Android Developer Intern at MobileApps Technologies
+
+Languages:
+English, Kannada, Malayalam
