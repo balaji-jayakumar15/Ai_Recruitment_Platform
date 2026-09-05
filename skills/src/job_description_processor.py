@@ -2,6 +2,7 @@ import re
 import json
 
 
+# Skills that our system can identify
 SKILLS = [
     "python",
     "java",
@@ -34,20 +35,124 @@ SKILLS = [
 ]
 
 
-def extract_required_skills(job_description):
-    text = job_description.lower()
+# Words that indicate a preferred / optional skill
+PREFERRED_KEYWORDS = [
+    "preferred",
+    "nice to have",
+    "good to have",
+    "optional",
+    "plus",
+    "bonus"
+]
+
+
+def skill_found(skill, text):
+    """
+    Check whether a skill exists in the given text.
+    """
+
+    skill = skill.lower()
+
+    # Special handling for skills containing symbols
+    if skill in ["c++", "c#"]:
+        return re.search(re.escape(skill), text) is not None
+
+    if skill == "node.js":
+        return re.search(r"\bnode\.js\b", text) is not None
+
+    if skill == "rest api":
+        return re.search(r"\brest\s+api\b", text) is not None
+
+    # Normal skills
+    pattern = r"(?<!\w)" + re.escape(skill) + r"(?!\w)"
+
+    return re.search(pattern, text) is not None
+
+
+def extract_skills_from_sentence(sentence):
+    """
+    Extract skills from one sentence.
+    """
 
     found_skills = []
 
-    for skill in SKILLS:
-        pattern = r"\b" + re.escape(skill.lower()) + r"\b"
+    sentence = sentence.lower()
 
-        if re.search(pattern, text):
+    for skill in SKILLS:
+        if skill_found(skill, sentence):
             found_skills.append(skill)
 
-    return sorted(set(found_skills))
+    return found_skills
+
+
+def extract_job_requirements(job_description):
+    """
+    Extract required and preferred skills from a job description.
+    """
+
+    text = job_description.lower()
+
+    required_skills = []
+    preferred_skills = []
+
+    # Split job description into sentences/lines
+    sentences = re.split(r"[.!?\n]+", text)
+
+    for sentence in sentences:
+
+        sentence = sentence.strip()
+
+        if not sentence:
+            continue
+
+        skills_in_sentence = extract_skills_from_sentence(sentence)
+
+        # Check whether the sentence indicates preferred skills
+        is_preferred = any(
+            keyword in sentence
+            for keyword in PREFERRED_KEYWORDS
+        )
+
+        if is_preferred:
+            preferred_skills.extend(skills_in_sentence)
+        else:
+            required_skills.extend(skills_in_sentence)
+
+    # Remove duplicates and sort
+    required_skills = sorted(set(required_skills))
+    preferred_skills = sorted(set(preferred_skills))
+
+    # If a skill exists in both lists, keep it as required
+    preferred_skills = [
+        skill
+        for skill in preferred_skills
+        if skill not in required_skills
+    ]
+
+    return required_skills, preferred_skills
+
+
+def process_job_description(job_title, job_description):
+    """
+    Create final structured Job Description output.
+    """
+
+    required_skills, preferred_skills = extract_job_requirements(
+        job_description
+    )
+
+    result = {
+        "job_title": job_title,
+        "required_skills": required_skills,
+        "preferred_skills": preferred_skills
+    }
+
+    return result
+
 
 if __name__ == "__main__":
+
+    job_title = "Python Developer"
 
     job_description = """
     We are looking for a Python Developer with
@@ -55,8 +160,10 @@ if __name__ == "__main__":
     Knowledge of Git and GitHub is preferred.
     """
 
-    required_skills = extract_required_skills(job_description)
+    result = process_job_description(
+        job_title,
+        job_description
+    )
 
-    result = {"job_title": "Python Developer", "required_skills": required_skills}
-
-    print(json.dumps(result,indent=2))
+    print("\nJob Description Processing Result:")
+    print(json.dumps(result, indent=2))
