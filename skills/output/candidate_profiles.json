@@ -13,7 +13,9 @@
             "portfolio": null
         },
         "education": [
-            "Bachelor of Science (B.Sc Computer Science)"
+            "Bachelor of Science (B.Sc Computer Science)",
+            "St. Joseph’s College Arts and Science",
+            "University of Madras"
         ],
         "skills": {
             "programming_languages": [
@@ -54,19 +56,20 @@
     },
     {
         "personal_details": {
-            "name": "Name: Meena Joseph",
+            "name": "Meena Joseph",
             "email": "meena.joseph@example.com",
             "phone": "+91 98765 10010",
             "location": "Bangalore, Karnataka"
         },
         "social_profiles": {
-            "github": "https://github.com/abirami",
-            "linkedin": "https://www.linkedin.com/in/abirami",
-            "naukri": "https://www.naukri.com/abirami",
+            "github": null,
+            "linkedin": null,
+            "naukri": null,
             "portfolio": null
         },
         "education": [
-            "B.Tech Computer Science Engineering"
+            "B.Tech Computer Science Engineering",
+            "Bangalore Technical University"
         ],
         "skills": {
             "programming_languages": [
@@ -85,8 +88,7 @@
             ],
             "cloud_and_devops": [],
             "tools": [
-                "Git",
-                "GitHub"
+                "Git"
             ]
         },
         "experience": [
@@ -121,18 +123,20 @@
     },
     {
         "personal_details": {
-            "name": "Name: Ananya Iyer",
+            "name": "Ananya Iyer",
             "email": "ananya.iyer@example.com",
             "phone": "+91 98765 10008",
             "location": "Chennai, Tamil Nadu"
         },
         "social_profiles": {
-            "github": "https://github.com/abirami",
-            "linkedin": "https://www.linkedin.com/in/abirami",
-            "naukri": "https://www.naukri.com/abirami",
+            "github": null,
+            "linkedin": null,
+            "naukri": null,
             "portfolio": null
         },
-        "education": [],
+        "education": [
+            "Design Institute Chennai"
+        ],
         "skills": {
             "programming_languages": [],
             "web_development": [
@@ -145,8 +149,7 @@
             "backend": [],
             "cloud_and_devops": [],
             "tools": [
-                "Figma",
-                "GitHub"
+                "Figma"
             ]
         },
         "experience": [
@@ -169,17 +172,13 @@
             "UI/UX Design Intern at Creative Digital Studio"
         ],
         "achievements": [],
-        "languages": [
-            "English",
-            "Tamil",
-            "Hindi"
-        ],
+        "languages": [],
         "total_experience_years": 0,
         "source_file": "resume3.txt"
     },
     {
         "personal_details": {
-            "name": "Name: Sneha Reddy",
+            "name": "Sneha Reddy",
             "email": "sneha.reddy@example.com",
             "phone": "+91 98765 10004",
             "location": "Hyderabad, Telangana"
@@ -191,7 +190,8 @@
             "portfolio": null
         },
         "education": [
-            "B.Tech Computer Science"
+            "B.Tech Computer Science",
+            "Hyderabad Institute of Technology"
         ],
         "skills": {
             "programming_languages": [
@@ -248,7 +248,7 @@
     },
     {
         "personal_details": {
-            "name": "Name: Mohammed Faiz",
+            "name": "Mohammed Faiz",
             "email": "faiz.mohammed@example.com",
             "phone": "+91 98765 10005",
             "location": "Mumbai, Maharashtra"
@@ -260,7 +260,6 @@
             "portfolio": null
         },
         "education": [
-            "Location: Mumbai, Maharashtra",
             "B.E. Computer Engineering",
             "Mumbai University"
         ],

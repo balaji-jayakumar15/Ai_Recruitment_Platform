@@ -5,10 +5,6 @@ Email: meena.joseph@example.com
 Phone: +91 98765 10010
 Location: Bangalore, Karnataka
 
-GitHub: https://github.com/abirami
-LinkedIn: https://www.linkedin.com/in/abirami
-Naukri: https://www.naukri.com/abirami
-Portfolio: https://abirami.dev
 
 Career Objective:
 Software engineer interested in mobile application development and modern programming technologies.

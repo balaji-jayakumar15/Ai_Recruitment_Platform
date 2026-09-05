@@ -179,6 +179,8 @@ def extract_name(text):
 
             if not re.search(r"\d", cleaned):
 
+                if ":" in cleaned:cleaned=cleaned.split(":", 1)[1].strip()
+
                 return cleaned
 
     return None
@@ -441,12 +443,11 @@ def extract_education(text):
 
     for line in lines:
 
-        lower_line = line.lower()
+        cleaned = line.strip()
+        lower_line = cleaned.lower()
 
         if "education" in lower_line:
-
             inside_education = True
-
             continue
 
         if inside_education:
@@ -463,35 +464,45 @@ def extract_education(text):
                     "languages"
                 ]
             ):
-
                 break
 
+            # Ignore location, CGPA and year-only lines
+            if lower_line.startswith("location:"):
+                continue
+
+            if lower_line.startswith("cgpa:"):
+                continue
+
+            if re.fullmatch(r"\d{4}", cleaned):
+                continue
+
+            # Add degree lines
             if any(
                 keyword in lower_line
                 for keyword in education_keywords
             ):
+                education.append(cleaned)
 
-                education.append(line)
-
-        else:
-
-            if any(
-                keyword in lower_line
-                for keyword in education_keywords
+            # Add university/institution lines
+            elif any(
+                word in lower_line
+                for word in [
+                    "university",
+                    "college",
+                    "institute",
+                    "school"
+                ]
             ):
-
-                education.append(line)
+                education.append(cleaned)
 
     result = []
 
     for item in education:
 
         if item not in result:
-
             result.append(item)
 
     return result
-
 
 # ============================================================
 # EXTRACT PROJECTS
