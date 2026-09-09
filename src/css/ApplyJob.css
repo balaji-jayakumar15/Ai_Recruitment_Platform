@@ -1,0 +1,74 @@
+.apply-job-page {
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.apply-job-card {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 35px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.apply-job-card h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.apply-description {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+.resume-preview {
+  margin-top: 25px;
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+.resume-preview h3 {
+  margin-bottom: 8px;
+}
+
+.resume-preview p {
+  color: #555;
+  word-break: break-word;
+}
+
+.submit-button {
+  margin-top: 25px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #1d4ed8;
+}

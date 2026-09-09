@@ -1,0 +1,91 @@
+.candidate-login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: #f7f9fc;
+  font-family: Arial, sans-serif;
+}
+
+.candidate-login-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 40px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.candidate-login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.candidate-login-header h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.candidate-login-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.candidate-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.candidate-login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.candidate-login-field label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.candidate-login-field input {
+  padding: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.candidate-login-field input:focus {
+  border-color: #2563eb;
+}
+
+.candidate-login-button {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.candidate-login-button:hover {
+  background: #1d4ed8;
+}
+
+.candidate-login-register {
+  margin-top: 25px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.candidate-login-register a {
+  margin-left: 5px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
