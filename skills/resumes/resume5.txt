@@ -1,0 +1,43 @@
+RESUME 5
+
+Name: Mohammed Faiz
+Email: faiz.mohammed@example.com
+Phone: +91 98765 10005
+Location: Mumbai, Maharashtra
+
+Career Objective:
+Backend developer with experience in Python, databases, and API development.
+
+Education:
+B.E. Computer Engineering
+Mumbai University
+2024
+CGPA: 7.9
+
+Skills:
+Python, Flask, Django, PostgreSQL, MySQL, REST API, Git, Linux
+
+Work Experience:
+Backend Developer Intern
+TechCore Solutions, Mumbai
+August 2023 - February 2024
+- Developed backend APIs using Flask.
+- Designed database tables.
+- Implemented CRUD operations.
+- Tested REST APIs using Postman.
+
+Projects:
+Online Book Management System
+- Developed a backend application using Django.
+- Used PostgreSQL for database management.
+- Created APIs for books and users.
+
+Certifications:
+- Python Backend Development
+- PostgreSQL Database Certification
+
+Internships:
+Backend Developer Intern at TechCore Solutions
+
+Languages:
+English, Hindi, Marathi

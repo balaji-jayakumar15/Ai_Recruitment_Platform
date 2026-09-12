@@ -1,0 +1,14 @@
+{
+  "job_title": "Python Developer",
+  "required_skills": [
+    "django",
+    "fastapi",
+    "python",
+    "rest api",
+    "sql"
+  ],
+  "preferred_skills": [
+    "git",
+    "github"
+  ]
+}

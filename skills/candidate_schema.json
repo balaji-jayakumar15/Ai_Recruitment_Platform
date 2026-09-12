@@ -5,6 +5,12 @@
     "phone": "",
     "location": ""
   },
+  "social_profiles": {
+  "github": "",
+  "linkedin": "",
+  "naukri": "",
+  "portfolio": ""
+ },
 
   "education": [
     {

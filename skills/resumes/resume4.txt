@@ -1,0 +1,43 @@
+RESUME 4
+
+Name: Sneha Reddy
+Email: sneha.reddy@example.com
+Phone: +91 98765 10004
+Location: Hyderabad, Telangana
+
+Career Objective:
+Machine learning enthusiast seeking a role where I can develop intelligent applications using AI and machine learning techniques.
+
+Education:
+B.Tech Computer Science
+Hyderabad Institute of Technology
+2025
+CGPA: 8.9
+
+Skills:
+im a python developer and i have experience in Python, Machine Learning, TensorFlow, Scikit-learn, Pandas, NumPy, SQL
+
+Work Experience:
+Machine Learning Intern
+AI Solutions Pvt Ltd, Hyderabad
+January 2025 - June 2025
+- Prepared datasets for machine learning models.
+- Built classification models using Scikit-learn.
+- Evaluated model performance.
+- Worked with data preprocessing techniques.
+
+Projects:
+Customer Churn Prediction
+- Built a machine learning model to predict customer churn.
+- Used Python and Scikit-learn.
+- Achieved 87% accuracy during testing.
+
+Certifications:
+- Machine Learning with Python
+- Introduction to Artificial Intelligence
+
+Internships:
+Machine Learning Intern at AI Solutions Pvt Ltd
+
+Languages:
+English, Telugu, Hindi
