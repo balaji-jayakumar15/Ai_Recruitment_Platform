@@ -1,0 +1,78 @@
+.recruiter-register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.recruiter-register-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 35px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.recruiter-register-card h1 {
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+.recruiter-register-card > p {
+  margin-bottom: 25px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+}
+
+.create-account-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.create-account-button:hover {
+  background-color: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  .recruiter-register-page {
+    padding: 20px;
+  }
+
+  .recruiter-register-card {
+    padding: 25px;
+  }
+}

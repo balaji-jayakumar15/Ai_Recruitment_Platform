@@ -1,0 +1,90 @@
+.applicants-page {
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.applicants-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.applicants-header {
+  margin-bottom: 30px;
+}
+
+.applicants-header h1 {
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+
+.applicants-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.applicants-table-wrapper {
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.applicants-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.applicants-table th,
+.applicants-table td {
+  padding: 18px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.applicants-table th {
+  background-color: #f8fafc;
+  font-size: 15px;
+}
+
+.applicants-table td {
+  color: #555;
+}
+
+.match-score {
+  font-weight: bold;
+}
+
+.view-candidate-button,
+.rank-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.view-candidate-button:hover,
+.rank-button:hover {
+  background-color: #1d4ed8;
+}
+
+.rank-button {
+  margin-top: 25px;
+  padding: 12px 22px;
+}
+
+@media (max-width: 600px) {
+  .applicants-page {
+    padding: 20px;
+  }
+
+  .applicants-table th,
+  .applicants-table td {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

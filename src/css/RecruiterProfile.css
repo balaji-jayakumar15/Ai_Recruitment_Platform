@@ -1,0 +1,85 @@
+.recruiter-profile-page {
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.recruiter-profile-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 35px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.recruiter-profile-container h1 {
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+.profile-subtitle {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.recruiter-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+}
+
+.update-profile-button {
+  width: fit-content;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.update-profile-button:hover {
+  background-color: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  .recruiter-profile-page {
+    padding: 20px;
+  }
+
+  .recruiter-profile-container {
+    padding: 25px;
+  }
+
+  .update-profile-button {
+    width: 100%;
+  }
+}

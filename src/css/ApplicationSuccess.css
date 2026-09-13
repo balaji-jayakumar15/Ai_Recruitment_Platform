@@ -1,0 +1,63 @@
+.success-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.success-card {
+  width: 100%;
+  max-width: 550px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.success-card h1 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.success-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.job-name {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.applications-button {
+  margin-top: 25px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.applications-button:hover {
+  background-color: #1d4ed8;
+}
